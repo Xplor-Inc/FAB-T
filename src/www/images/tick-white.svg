@@ -1,0 +1,7 @@
+<svg id="tick-white" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <g id="Core">
+    <g id="check-circle-outline">
+      <path id="Shape" d="M3.54,4.86,2.7,5.7,5.4,8.4l6-6-.84-.84L5.4,6.72,3.54,4.86ZM10.8,6A4.8,4.8,0,1,1,6,1.2a4.679,4.679,0,0,1,1.32.18L8.28.42A7.3,7.3,0,0,0,6,0a6,6,0,1,0,6,6Z" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

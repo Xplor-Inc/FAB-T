@@ -1,0 +1,40 @@
+@media screen and (max-width: 992px) {
+    .navbar-toggler{padding: .25rem 0 .25rem .75rem;}
+    .nav-link{border-bottom: 1px solid #ccc;}
+    .navbar-nav .nav-item a{color: #aaa;}
+    .navbar-nav .nav-item a:hover{color: #007bff;background: #f7f7f7;}
+    .navbar-nav .nav-item .active{border-bottom: 2px #052b51 solid;color: #052b51;font-weight: bold;}
+    
+    /* New navbar starts */
+    .overlay { height: 100%; width: 0; position: fixed; z-index: 999; top: 0; left: 0; background-color: rgb(12,77,144); background-color: rgba(12,77,144, 1); overflow-x: hidden; transition: 0.5s;  }
+    .overlay-content { position: relative; top: 25%; width: 50%; text-align: center; margin: 30px auto;  }
+    .overlay .closebtn { position: absolute; top: 20px; right: 45px; font-size: 60px;display: block;color: #fff;  }
+    .overlay .closebtn:hover{text-decoration: none;}
+    /* New navbar starts */
+}
+@media screen and (max-width: 800px) {
+    .navbar-toggler{padding: .25rem 0 .25rem .75rem;}
+}
+
+@media screen and (max-width: 768px) {
+    .head-top{justify-content: center;text-align: center;}
+    .head-top div:nth-of-type(2){width: 60%;}
+   
+}
+
+@media screen and (max-width: 700px) {
+
+    .navbar-brand img{width: 50%;}
+    .head-top div:nth-of-type(2){width: 80%;}
+    section {padding: 2rem 0;}
+    section p{font-size: 1rem;line-height: 1.8rem;}
+    .head-top a{padding: 0;}
+}
+
+@media screen and (max-width: 520px) {
+    
+  }
+
+@media screen and (max-height: 450px) {
+    .overlay .closebtn {font-size: 40px; top: 15px; right: 35px;}
+  }

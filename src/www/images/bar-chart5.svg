@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="475" height="164" viewBox="0 0 475 164">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="1" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#71a54b"/>
+      <stop offset="1" stop-color="#aac993"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1" y1="1" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fb0"/>
+      <stop offset="1" stop-color="#ff9558"/>
+    </linearGradient>
+  </defs>
+  <g id="bar-chart5" transform="translate(-406 -192)">
+    <g id="Group_26" data-name="Group 26" transform="translate(0.5 8)">
+      <line id="Line_9" data-name="Line 9" y2="130" transform="translate(406 184.5)" fill="none" stroke="#c5c5c5" stroke-width="1"/>
+      <line id="Line_10" data-name="Line 10" y2="130" transform="translate(880 184.5)" fill="none" stroke="#c5c5c5" stroke-width="1"/>
+      <line id="Line_11" data-name="Line 11" y2="130" transform="translate(785 184.5)" fill="none" stroke="#c5c5c5" stroke-width="1"/>
+      <line id="Line_12" data-name="Line 12" y2="130" transform="translate(690 184.5)" fill="none" stroke="#c5c5c5" stroke-width="1"/>
+      <line id="Line_13" data-name="Line 13" y2="130" transform="translate(595 184.5)" fill="none" stroke="#c5c5c5" stroke-width="1"/>
+      <line id="Line_14" data-name="Line 14" x2="474" transform="translate(405.5 184.5)" fill="none" stroke="#ececec" stroke-width="1"/>
+      <line id="Line_15" data-name="Line 15" x2="474" transform="translate(405.5 206.5)" fill="none" stroke="#ececec" stroke-width="1"/>
+      <line id="Line_16" data-name="Line 16" x2="474" transform="translate(405.5 227.5)" fill="none" stroke="#ececec" stroke-width="1"/>
+      <line id="Line_17" data-name="Line 17" x2="474" transform="translate(405.5 249.5)" fill="none" stroke="#ececec" stroke-width="1"/>
+      <line id="Line_18" data-name="Line 18" x2="474" transform="translate(405.5 271.5)" fill="none" stroke="#ececec" stroke-width="1"/>
+      <line id="Line_19" data-name="Line 19" x2="474" transform="translate(405.5 292.5)" fill="none" stroke="#ececec" stroke-width="1"/>
+      <line id="Line_20" data-name="Line 20" x2="474" transform="translate(405.5 314.5)" fill="none" stroke="#c5c5c5" stroke-width="1"/>
+      <line id="Line_21" data-name="Line 21" y2="130" transform="translate(500 184.5)" fill="none" stroke="#c5c5c5" stroke-width="1"/>
+      <g id="Group_39" data-name="Group 39" transform="translate(-12.5)">
+        <g id="Group_27" data-name="Group 27" transform="translate(2)">
+          <path id="Rectangle_35" data-name="Rectangle 35" d="M3,0h9a3,3,0,0,1,3,3V25a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3A3,3,0,0,1,3,0Z" transform="translate(432 289)" fill="url(#linear-gradient)"/>
+          <path id="Rectangle_36" data-name="Rectangle 36" d="M3,0h9a3,3,0,0,1,3,3V19a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3A3,3,0,0,1,3,0Z" transform="translate(479 295)" fill="url(#linear-gradient-2)"/>
+          <text id="_283" data-name="283" transform="translate(440 285)" fill="#888" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-10.107" y="0">283</tspan></text>
+          <text id="_189" data-name="189" transform="translate(487 291)" fill="#888" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-10.107" y="0">189</tspan></text>
+        </g>
+      </g>
+      <g id="Group_40" data-name="Group 40" transform="translate(82.5)">
+        <g id="Group_27-2" data-name="Group 27" transform="translate(2 6)">
+          <path id="Rectangle_35-2" data-name="Rectangle 35" d="M3,0h9a3,3,0,0,1,3,3V54a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3A3,3,0,0,1,3,0Z" transform="translate(432 254)" fill="url(#linear-gradient)"/>
+          <path id="Rectangle_36-2" data-name="Rectangle 36" d="M3,0h9a3,3,0,0,1,3,3V62a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3A3,3,0,0,1,3,0Z" transform="translate(479 246)" fill="url(#linear-gradient-2)"/>
+          <text id="_842" data-name="842" transform="translate(440 247)" fill="#888" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-10.107" y="0">842</tspan></text>
+          <text id="_1_148" data-name="1,148" transform="translate(487 240)" fill="#888" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-14.654" y="0">1,148</tspan></text>
+        </g>
+      </g>
+      <g id="Group_43" data-name="Group 43" transform="translate(176.5)">
+        <g id="Group_27-3" data-name="Group 27" transform="translate(2 6)">
+          <path id="Rectangle_35-3" data-name="Rectangle 35" d="M3,0h9a3,3,0,0,1,3,3v8a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3A3,3,0,0,1,3,0Z" transform="translate(432 297)" fill="url(#linear-gradient)"/>
+          <path id="Rectangle_36-3" data-name="Rectangle 36" d="M3,0h9a3,3,0,0,1,3,3V13a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3A3,3,0,0,1,3,0Z" transform="translate(479 295)" fill="url(#linear-gradient-2)"/>
+          <text id="_132" data-name="132" transform="translate(440 294)" fill="#888" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-10.107" y="0">132</tspan></text>
+          <text id="_136" data-name="136" transform="translate(487 292)" fill="#888" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-10.107" y="0">136</tspan></text>
+        </g>
+      </g>
+      <g id="Group_42" data-name="Group 42" transform="translate(367.5)">
+        <g id="Group_27-4" data-name="Group 27" transform="translate(2 -83)">
+          <path id="Rectangle_35-4" data-name="Rectangle 35" d="M3,0h9a3,3,0,0,1,3,3V104a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3A3,3,0,0,1,3,0Z" transform="translate(432 293)" fill="url(#linear-gradient)"/>
+          <path id="Rectangle_36-4" data-name="Rectangle 36" d="M3,0h9a3,3,0,0,1,3,3V98a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3A3,3,0,0,1,3,0Z" transform="translate(479 299)" fill="url(#linear-gradient-2)"/>
+        </g>
+        <text id="_12_033" data-name="12,033" transform="translate(442 203)" fill="#888" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-18.023" y="0">12,033</tspan></text>
+        <text id="_11_104" data-name="11,104" transform="translate(489 207)" fill="#888" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-18.023" y="0">11,104</tspan></text>
+      </g>
+      <text id="Marketing" transform="translate(453.5 331)" fill="#888" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-26.786" y="0">Marketing</tspan></text>
+      <text id="Professional_Services" data-name="Professional
+Services" transform="translate(548.5 331)" fill="#888" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-33.466" y="0">Professional</tspan><tspan x="-22.597" y="14">Services</tspan></text>
+      <text id="Properties_Facilities" data-name="Properties &amp;
+Facilities" transform="translate(642.5 331)" fill="#888" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-32.804" y="0">Properties &amp;</tspan><tspan x="-23.678" y="14">Facilities</tspan></text>
+      <text id="Technology" transform="translate(737.5 331)" fill="#888" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-30.729" y="0">Technology</tspan></text>
+      <text id="Total" transform="translate(832.5 331)" fill="#888" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-13.392" y="0">Total</tspan></text>
+      <g id="Group_45" data-name="Group 45" transform="translate(271.5)">
+        <g id="Group_27-5" data-name="Group 27" transform="translate(2 6)">
+          <path id="Rectangle_35-5" data-name="Rectangle 35" d="M3,0h9a3,3,0,0,1,3,3V47a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3A3,3,0,0,1,3,0Z" transform="translate(432 261)" fill="url(#linear-gradient)"/>
+          <path id="Rectangle_36-5" data-name="Rectangle 36" d="M3,0h9a3,3,0,0,1,3,3V40a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3A3,3,0,0,1,3,0Z" transform="translate(479 268)" fill="url(#linear-gradient-2)"/>
+          <text id="_773" data-name="773" transform="translate(440 258)" fill="#888" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-10.107" y="0">773</tspan></text>
+          <text id="_448" data-name="448" transform="translate(487 265)" fill="#888" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-10.107" y="0">448</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

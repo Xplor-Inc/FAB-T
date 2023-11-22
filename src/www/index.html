@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TransparenSee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ </head>
+  <body>
+
+<!-- Navigations starts -->
+<nav class="navbar navbar-expand-lg p-0">
+  <div class="container-fluid">
+    
+      <a href="#" class="navbar-brand"  data-aos="fade-down" data-aos-delay="800"><img src="images/logo.png"></a>
+      <button class="navbar-toggler">
+          <span class="navbar-toggler-icon" onclick="openNav()"><i class="fa fa-align-right"></i></span>
+      </button>
+      <div class="navbar-collapse overlay" id="myNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+          <ul class="navbar-nav text-center ml-auto overlay-content text-strt nav-dark-blue"  data-aos="fade-up" data-aos-delay="800">
+            <li class="nav-item"><a href="#" class="nav-link"><img src="images/release-icon.svg" alt=""> Releases</a></li>
+            <li class="devide-line">|</li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="images/gitlab_icon.svg" alt=""> Gitlab</a></li>
+            <li class="devide-line">|</li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="images/approve.svg" alt=""> Compliance</a></li>
+            <li class="devide-line">|</li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="images/data_icon.svg" alt=""> Testers Master Data</a></li>
+            <li class="devide-line">|</li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="images/tester-icon.svg" alt=""> Tester Utilization</a></li>
+            <li class="devide-line">|</li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="images/money-bag.svg" alt=""> Testing Cost Savings</a></li>
+          </ul>
+
+          <ul class="navbar-nav text-center ml-auto overlay-content text-strt nav-navi-blue"  data-aos="fade-up" data-aos-delay="800">
+            <li class="nav-item"><a href="#" class="nav-link"><img src="images/user.svg" alt=""> User Name</a></li>
+          </ul>
+
+          <ul class="navbar-nav text-center ml-auto overlay-content text-strt sign-out"  data-aos="fade-up" data-aos-delay="800">
+            <li class="nav-item"><a href="#" class="nav-link"><img src="images/sign_out.svg" alt=""> Sign Out</a></li>
+          </ul>
+          
+      </div>
+  </div>
+</nav>
+
+<!-- sub nav start -->
+
+<div class="sub-nav" data-aos="fade-left" data-aos-delay="800">
+  <p>Leaders Forum</p>
+
+  <form class="group-drop">
+    <!-- <label for="groupsvm">Group SVM & CS</label> -->
+    <select id="groupsvm" name="groupsvm">
+      <option value="australia">Group SVM & CS</option>
+      <option value="canada">select 01</option>
+      <option value="usa">select 02</option>
+    </select>
+  </form>
+</div>
+
+
+<section>
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-12" data-aos="fade-right" data-aos-delay="800">
+      <div class="block-one">
+        <div class="left-line"></div>
+        <div class="block-right">
+          <div class="title">YOY PO Volume Increased by <b>8%</b></div>
+          <div class="pie-chart"><img src="images/block-one.png" alt=""></div>
+        </div>
+      </div>
+
+      <div class="block-two">
+        <div class="left-line"></div>
+        <div class="block-right">
+          <div class="title">YOY Spend Increased by <b>4%</b></div>
+          <div class="pie-chart"><img src="images/block-two.png" alt=""></div>
+        </div>
+      </div>
+      
+      <div class="block-three">
+        <div class="left-line"></div>
+        <div class="block-right">
+          <div class="title">Contract Volume Decreased by <b>11%</b></div>
+          <div class="pie-chart"><img src="images/block-three.png" alt=""></div>
+        </div>
+      </div>
+
+      <div class="block-four">
+        <div class="left-line"></div>
+        <div class="block-right">
+          <div class="title">Total Spend Contribution <b>30%</b> By Top 10 Supplier</div>
+          <div class="pie-chart"><img src="images/block-four.png" alt=""></div>
+        </div>
+      </div>
+
+      <div class="block-five">
+        <div class="left-line"></div>
+        <div class="block-right">
+          <div class="title">
+            <div class="number">2,707</div>
+            <div class="supplier">Active Suppliers</div>
+        </div>
+          <div class="van"><img src="images/van.png" alt=""></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-9 col-md-9 col-sm-12" style="margin: 0 -15px;" data-aos="fade-left" data-aos-delay="800">
+
+      <div class="row">
+
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="right-box">
+          <div class="title">Key Updates</div>
+          <ul>
+            <li>YTD PO volumes has increased by <b>8%</b></li>
+            <li>Increased in spend by <b>4%</b> compared to previous year</li>
+            <li>Continued downward trend in the contract volume for PS category by <b>11%</b> due to implementation of <b>Direct PO Issuance</b> for contingent workforce management</li>
+            <li>Supplier Base <b>2,707 active; 1,993 HO Managed; 714 Non-HO Managed</b> as at YTD'23</li>
+            <li>Top 10 Supplier spends contribute to <b>30%</b> of the total spend</li>
+            <li>2022 Rebates -  Vendor follow-ups in progress on the pending rebates worth <b>0.8M</b>, due to close soon</li>
+          </ul>
+        </div>
+
+        <div class="right-box mt-3">
+          <div class="title">Top 10 Supplier Spend<br>(% of Total Spend)</div>
+          <div class="center-content">
+            <img src="images/pie-chart.png">
+            <div class="index">
+              <ul>
+                <li><img src="images/dot1.svg"> ADNIC</li>
+                <li><img src="images/dot2.svg"> Help IT</li>
+                <li><img src="images/dot3.svg"> Cognizant</li>
+                <li><img src="images/dot4.svg"> Mulleniowe</li>
+                <li><img src="images/dot5.svg"> Oracle</li>
+                <li><img src="images/dot6.svg"> Dice Tek</li>
+                <li><img src="images/dot7.svg"> Dellotte</li>
+                <li><img src="images/dot8.svg"> Transguard</li>
+                <li><img src="images/dot9.svg"> Wipro</li>
+                <li><img src="images/dot10.svg"> WNS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12">
+
+        <div class="right-box">
+          <div class="title">PO Volume 2022 vs 2023</div>
+          <div class="center-content">
+            <img src="images/bar-chart1.svg" class="chart">
+            <div class="index">
+              <ul>
+                <li><img src="images/green-dot.svg"> 2022</li>
+                <li><img src="images/orange-dot.svg"> 2023</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-box mt-3">
+          <div class="title">PO Volume by Category 2022 vs 2023</div>
+          <div class="center-content">
+            <img src="images/bar-chart2.svg" class="chart">
+            <div class="index">
+              <ul>
+                <li><img src="images/green-dot.svg"> 2022</li>
+                <li><img src="images/orange-dot.svg"> 2023</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-box mt-3">
+          <div class="title">Active Suppliers</div>
+          <div class="center-content">
+            <img src="images/bar-chart3.svg" class="chart">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12">
+
+        <div class="right-box">
+          <div class="title">PO Volume 2022 vs 2023 (AED in Mn)</div>
+          <div class="center-content">
+            <img src="images/bar-chart4.svg" class="chart">
+            <div class="index">
+              <ul>
+                <li><img src="images/green-dot.svg"> 2022</li>
+                <li><img src="images/orange-dot.svg"> 2023</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-box mt-3">
+          <div class="title">PO Spend by Category 2022 vs 2023</div>
+          <div class="center-content">
+            <img src="images/bar-chart5.svg" class="chart">
+            <div class="index">
+              <ul>
+                <li><img src="images/green-dot.svg"> 2022</li>
+                <li><img src="images/orange-dot.svg"> 2023</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-box mt-3">
+          <div class="title">Contract Volume by Category</div>
+          <div class="center-content">
+            <img src="images/bar-chart6.svg" class="chart">
+            <div class="index">
+              <ul>
+                <li><img src="images/green-dot.svg"> 2022</li>
+                <li><img src="images/orange-dot.svg"> 2023</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+
+<button id="scroll" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/jquery.counterup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="js/aos.js"></script>
+  
+
+  <script>
+    $('.count').counterUp({
+      delay:10,
+      time:2000
+    });
+
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    };
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    };
+
+    $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 800); 
+        return false; 
+    }); 
+    });
+    
+    
+    var coll = document.getElementsByClassName("footericon");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var footerit = this.nextElementSibling;
+    if (footerit.style.display === "block") {
+      footerit.style.display = "none";
+    } else {
+      footerit.style.display = "block";
+    }
+    });
+    }
+
+    AOS.init({
+      delay: 50,
+      duration: 800,
+    });
+
+    
+  </script>
+  </body>
+</html>
