@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TransparenSee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style-blue.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ </head>
+  <body>
+
+<!-- Navigations starts -->
+<nav class="navbar navbar-expand-lg p-0">
+  <div class="container-fluid">
+    
+      <a href="#" class="navbar-brand"  data-aos="fade-down" data-aos-delay="800"><img src="images/logo.png"></a>
+      <button class="navbar-toggler">
+          <span class="navbar-toggler-icon" onclick="openNav()"><i class="fa fa-align-right"></i></span>
+      </button>
+      <div class="navbar-collapse overlay" id="myNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+          <ul class="navbar-nav text-center ml-auto overlay-content text-strt nav-dark-blue"  data-aos="fade-up" data-aos-delay="800">
+            <li class="nav-item"><a href="#" class="nav-link"><img src="images/release-icon.svg" alt=""> Releases</a></li>
+            <li class="devide-line">|</li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="images/gitlab_icon.svg" alt=""> Gitlab</a></li>
+            <li class="devide-line">|</li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="images/approve.svg" alt=""> Compliance</a></li>
+            <li class="devide-line">|</li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="images/data_icon.svg" alt=""> Testers Master Data</a></li>
+            <li class="devide-line">|</li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="images/tester-icon.svg" alt=""> Tester Utilization</a></li>
+            <li class="devide-line">|</li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="images/money-bag.svg" alt=""> Testing Cost Savings</a></li>
+          </ul>
+
+          <ul class="navbar-nav text-center ml-auto overlay-content text-strt nav-navi-blue"  data-aos="fade-up" data-aos-delay="800">
+            <li class="nav-item"><a href="#" class="nav-link"><img src="images/user.svg" alt=""> User Name</a></li>
+          </ul>
+
+          <ul class="navbar-nav text-center ml-auto overlay-content text-strt sign-out"  data-aos="fade-up" data-aos-delay="800">
+            <li class="nav-item"><a href="#" class="nav-link"><img src="images/sign_out.svg" alt=""> Sign Out</a></li>
+          </ul>
+          
+          
+      </div>
+  </div>
+</nav>
+
+<!-- sub nav start -->
+<section>
+<div class="row sub-nav">
+  <div class="col-lg-8 col-md-8 col-sm-12"   data-aos="fade-left" data-aos-delay="800">
+
+  <div class="filter-bar">
+  <div class="left-box-sm"></div>
+  <div class="filter-bg button-slanted">
+    <span class="button-slanted-content">Filters <img src="images/filter-icon.svg"></span>
+  </div>
+  </div>
+
+  <form class="group-drop" style="display:contents;">
+
+    <div class="calendar">
+      <label for="usr">From Date</label>
+      <img src="images/calendar.svg"> <input type="text" class="cal-date" placeholder="MM/DD/YYYY">
+    </div>
+    <div class="calendar">
+      <label for="usr">To Date</label>
+      <img src="images/calendar.svg"> <input type="text" class="cal-date" placeholder="MM/DD/YYYY">
+    </div>
+
+    <div class="dropdn">
+    <label>Release Owners</label>
+    <!-- <label for="groupsvm">Group SVM & CS</label> -->
+    <select id="release" name="release">
+      <option value="australia">All Owners</option>
+      <option value="canada">select 01</option>
+      <option value="usa">select 02</option>
+    </select>
+    </div>
+
+    <div class="dropdn">
+      <label>Release Status</label>
+      <!-- <label for="groupsvm">Group SVM & CS</label> -->
+      <select id="status" name="status">
+        <option value="australia">All Release</option>
+        <option value="canada">select 01</option>
+        <option value="usa">select 02</option>
+      </select>
+      </div>
+
+  </form>
+  </div>
+
+<div class="col-lg-4 col-md-4 col-sm-12"   data-aos="fade-right" data-aos-delay="800">
+    <button class="reset">Reset</button>
+    <div class="search">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" class="searchButton">
+        Search
+     </button>
+    </div>
+</div>
+</div>
+</section>
+
+<section>
+  <div class="page-title">Current Releases</div>
+  <div>
+    <ul id="pagination">
+      <li><a class="" href="#">«</a></li>
+      <li><a href="#">1</a></li>
+      <li><a href="#" class="active">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">6</a></li>
+      <li><a href="#">7</a></li>
+      <li><a href="#">»</a></li>
+    </ul>
+  </div>
+</section>
+
+<div class="ml-3 mr-3 table-title">
+  <ul>
+    <li class="br-r li-1">ID</li>
+    <li class="br-r li-2">Release Name</li>
+    <li class="br-r li-3">Release Owner</li>
+    <li class="br-r li-4">Impacted Applications</li>
+    <li class="br-r li-5">Test Execution</li>
+    <li class="br-r li-6">Release Date</li>
+    <li class="br-r li-7">Project Name</li>
+    <li class="br-r li-8">Domain Name</li>
+    <li class="li-9">Status</li>
+  </ul>
+</div>
+
+<div class="ml-3 mr-3 table-content1">
+  <ul>
+    <li class="br-r li-1"><a href="#">36578</a></li>
+    <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
+    <li class="br-r li-3">John Dove</li>
+    <li class="br-r li-4">
+      <button data-toggle="collapse" href="#collapseBottom" aria-expanded="false" aria-controls="collapseTop">MX_CD <img src="images/down-arrow-white.svg"></button>
+      <button data-toggle="collapse" href="#collapseBottom" aria-expanded="false" aria-controls="collapseTop">Murex <img src="images/down-arrow-white.svg"></button>
+    </li>
+    <li class="br-r li-5 red">Not Completed</li>
+    <li class="br-r li-6">30 Nov, 2023</li>
+    <li class="br-r li-7">GM Global Markets</li>
+    <li class="br-r li-8">Corporate and Investment Banking</li>
+    <li class="li-9 green">Scheduled</li>
+
+    <div class="drop1 collapse" id="collapseBottom"">
+      <div class="title-bg">Release : Gitlab Deployment, Application : INTERNATIONAL</div>
+      <div class="content-area">
+        <div class="inner-content">
+          <div class="left-head">
+          <button>FAB Qatar</button>
+          <span>Application Owner : <b>Kamalesh AK</b></span>
+          </div>
+      
+          <div class="right-head">
+            <span>Service Owner : <b>Sankar Thiagarajan</b></span>
+          </div>
+      
+          <div class="main-title">Compliance Status:</div>
+          <details>
+            <summary>
+          <div class="red-band">
+            <div class="left-box-red-sm"></div>
+            <div class="compliant-red button-slanted"><span class="button-slanted-content">Not Compliant</span></div>
+            <div class="inner-text">Branch Protection Compliance</div>
+          </div>
+          </summary>
+          
+          <p>
+          <div class="first-block-bg">
+              <div class="release-title">Release Pipeline</div>
+              <div class="blue-title-head">
+                <ul>
+                  <li class="br-r li-1">Last Commit By</li>
+                  <li class="br-r li-2">Commit Message</li>
+                  <li class="br-r li-3">Commit ID</li>
+                  <li class="br-r li-4">Pipeline ID</li>
+                  <li class="br-r li-5">Executed On</li>
+                  <li class="br-r li-6">Pipeline Status</li>
+                  <li class="br-r li-7">Execution Duration</li>
+                  <li>Jobs</li>
+                </ul>
+              </div>
+      
+              <div class="blue-title-content">
+                <ul>
+                  <li class="br-r li-1"><a href="#">Sudharson Ayyadurai</a></li>
+                  <li class="br-r li-2">Removed Duplicate EB_FABQatar folder</li>
+                  <li class="br-r li-3"><a href="#">Occe095</a></li>
+                  <li class="br-r li-4"><a href="#">#324621</a></li>
+                  <li class="br-r li-5">Jul 5, 2023, 5:28:29 PM GMT + 05:30</li>
+                  <li class="br-r li-6 red"><img src="images/info.svg"> Passed</li>
+                  <li class="br-r li-7">00:38:30</li>
+                  <li class="jobs li-8">
+                    <ul>
+                      <li><a href="#"><div class="left-green"><img src="images/tick-white.svg"></div> <div class="center-text-green">gso_secret_gitlab</div></a></li>
+                      <li><a href="#"><div class="left-green"><img src="images/tick-white.svg"></div> <div class="center-text-green">pull_tafjlib</div><div class="right-green"><img src="images/download-icon.svg"></div></a></li>
+                      <li><a href="#"><div class="left-red someElement" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit"><img src="images/info-icon.svg"></div> <div class="center-text-red">ci_codeanalysis_sonarqube</div></a></li>
+                      <li><a href="#"><div class="left-green"><img src="images/tick-white.svg"></div> <div class="center-text-green">pull_tafjlib</div><div class="right-green"><img src="images/download-icon.svg"></div></a></li>
+                    </ul>
+                  </li>
+                </ul>
+                
+              </div>
+          </div>
+      
+          <div class="first-block-bg">
+            <div class="release-title">Main Pipeline</div>
+            <div class="blue-title-head">
+              <ul>
+                <li class="br-r li-1">Last Commit By</li>
+                <li class="br-r li-2">Commit Message</li>
+                <li class="br-r li-3">Commit ID</li>
+                <li class="br-r li-4">Pipeline ID</li>
+                <li class="br-r li-5">Executed On</li>
+                <li class="br-r li-6">Pipeline Status</li>
+                <li class="br-r li-7">Execution Duration</li>
+                <li>Jobs</li>
+              </ul>
+            </div>
+      
+            <div class="blue-title-content">
+              <ul>
+                <li class="br-r li-1"><a href="#">Sudharson Ayyadurai</a></li>
+                <li class="br-r li-2">Removed Duplicate EB_FABQatar folder</li>
+                <li class="br-r li-3"><a href="#">Occe095</a></li>
+                <li class="br-r li-4"><a href="#">#324621</a></li>
+                <li class="br-r li-5">Jul 5, 2023, 5:28:29 PM GMT + 05:30</li>
+                <li class="br-r li-6 red"><img src="images/info.svg"> Passed</li>
+                <li class="br-r li-7">00:38:30</li>
+                <li class="jobs li-8">
+                  <ul>
+                    <li><a href="#"><div class="left-green"><img src="images/tick-white.svg"></div> <div class="center-text-green">gso_secret_gitlab</div></a></li>
+                    <li><a href="#"><div class="left-green"><img src="images/tick-white.svg"></div> <div class="center-text-green">pull_tafjlib</div><div class="right-green"><img src="images/download-icon.svg"></div></a></li>
+                    <li><a href="#"><div class="left-red"><img src="images/info-icon.svg"></div> <div class="center-text-red">ci_codeanalysis_sonarqube</div></a></li>
+                    <li><a href="#"><div class="left-green"><img src="images/tick-white.svg"></div> <div class="center-text-green">pull_tafjlib</div><div class="right-green"><img src="images/download-icon.svg"></div></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </p>
+          </details>
+      
+        <div class="left-head">
+          <button>FAB SingaporeISL</button>
+          <span>Application Owner : <b>Kamalesh AK</b></span>
+        </div>
+      
+        <div class="right-head">
+          <span>Service Owner : <b>Sankar Thiagarajan</b></span>
+        </div>
+      
+        <div class="main-title">Compliance Status:</div>
+          <div class="green-band">
+            <div class="left-box-green-sm"></div>
+            <div class="compliant-green button-slanted"><span class="button-slanted-content">Compliant</span></div>
+            <!-- <div class="inner-text-green">Branch Protection Compliance</div> -->
+          </div>
+      
+        </div>
+      </div>    
+      </div>  
+  </ul>
+
+  
+</div>
+
+<div class="ml-3 mr-3 table-content2">
+  <ul>
+    <li class="br-r li-1"><a href="#">36578</a></li>
+    <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
+    <li class="br-r li-3">John Dove</li>
+    <li class="br-r li-4"><button>MX_CD</button> <button>Murex</button></li>
+    <li class="br-r li-5 green">Completed</li>
+    <li class="br-r li-6">30 Nov, 2023</li>
+    <li class="br-r li-7">GM Global Markets</li>
+    <li class="br-r li-8">Corporate and Investment Banking</li>
+    <li class="li-9 green">Scheduled</li>
+  </ul>
+</div>
+
+<div class="ml-3 mr-3 table-content1">
+  <ul>
+    <li class="br-r li-1"><a href="#">36578</a></li>
+    <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
+    <li class="br-r li-3">John Dove</li>
+    <li class="br-r li-4">
+      <button>MX_CD <img src="images/down-arrow-white.svg"></button>
+      <button>Murex <img src="images/down-arrow-white.svg"></button></li>
+    <li class="br-r li-5 red">Not Completed</li>
+    <li class="br-r li-6">30 Nov, 2023</li>
+    <li class="br-r li-7">GM Global Markets</li>
+    <li class="br-r li-8">Corporate and Investment Banking</li>
+    <li class="li-9 green">Scheduled</li>
+  </ul>
+</div>
+
+<div class="ml-3 mr-3 table-content2">
+  <ul>
+    <li class="br-r li-1"><a href="#">36578</a></li>
+    <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
+    <li class="br-r li-3">John Dove</li>
+    <li class="br-r li-4"><button>MX_CD</button> <button>Murex</button></li>
+    <li class="br-r li-5 green">Completed</li>
+    <li class="br-r li-6">30 Nov, 2023</li>
+    <li class="br-r li-7">GM Global Markets</li>
+    <li class="br-r li-8">Corporate and Investment Banking</li>
+    <li class="li-9 green">Scheduled</li>
+  </ul>
+</div>
+
+<div class="ml-3 mr-3 table-content1">
+  <ul>
+    <li class="br-r li-1"><a href="#">36578</a></li>
+    <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
+    <li class="br-r li-3">John Dove</li>
+    <li class="br-r li-4">
+      <button>MX_CD <img src="images/down-arrow-white.svg"></button>
+      <button>Murex <img src="images/down-arrow-white.svg"></button></li>
+    <li class="br-r li-5 red">Not Completed</li>
+    <li class="br-r li-6">30 Nov, 2023</li>
+    <li class="br-r li-7">GM Global Markets</li>
+    <li class="br-r li-8">Corporate and Investment Banking</li>
+    <li class="li-9 green">Scheduled</li>
+  </ul>
+</div>
+
+<div class="ml-3 mr-3 table-content2">
+  <ul>
+    <li class="br-r li-1"><a href="#">36578</a></li>
+    <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
+    <li class="br-r li-3">John Dove</li>
+    <li class="br-r li-4"><button>MX_CD</button> <button>Murex</button></li>
+    <li class="br-r li-5 green">Completed</li>
+    <li class="br-r li-6">30 Nov, 2023</li>
+    <li class="br-r li-7">GM Global Markets</li>
+    <li class="br-r li-8">Corporate and Investment Banking</li>
+    <li class="li-9 green">Scheduled</li>
+  </ul>
+</div>
+
+
+
+
+
+<button id="scroll" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/jquery.counterup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="js/aos.js"></script>
+  
+
+  <script>
+    $('.count').counterUp({
+      delay:10,
+      time:2000
+    });
+
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    };
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    };
+
+    $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 800); 
+        return false; 
+    }); 
+    });
+    
+    
+    var coll = document.getElementsByClassName("footericon");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var footerit = this.nextElementSibling;
+    if (footerit.style.display === "block") {
+      footerit.style.display = "none";
+    } else {
+      footerit.style.display = "block";
+    }
+    });
+    }
+
+    AOS.init({
+      delay: 50,
+      duration: 800,
+    });
+
+    
+  </script>
+  </body>
+</html>
