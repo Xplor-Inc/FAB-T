@@ -49,6 +49,7 @@
             <li class="nav-item"><a href="#" class="nav-link"><img src="images/sign_out.svg" alt=""> Sign Out</a></li>
           </ul>
           
+          
       </div>
   </div>
 </nav>
@@ -56,7 +57,7 @@
 <!-- sub nav start -->
 <section>
 <div class="row sub-nav">
-  <div class="col-lg-7 col-md-7 col-sm-12"   data-aos="fade-left" data-aos-delay="800">
+  <div class="col-lg-8 col-md-8 col-sm-12"   data-aos="fade-left" data-aos-delay="800">
 
   <div class="filter-bar">
   <div class="left-box-sm"></div>
@@ -65,14 +66,19 @@
   </div>
   </div>
 
-  <form class="group-drop" style="display: inline-block;">
+  <form class="group-drop" style="display:contents;">
 
-    <div class="calendar"><img src="images/calendar.svg"> <span>From Date</span></div>
-
-    <div class="calendar"><img src="images/calendar.svg"> <span>To Date</span></div>
+    <div class="calendar">
+      <label for="usr">From Date</label>
+      <img src="images/calendar.svg"> <input type="text" class="cal-date" placeholder="MM/DD/YYYY">
+    </div>
+    <div class="calendar">
+      <label for="usr">To Date</label>
+      <img src="images/calendar.svg"> <input type="text" class="cal-date" placeholder="MM/DD/YYYY">
+    </div>
 
     <div class="dropdn">
-    <span>Release Owners</span>
+    <label>Release Owners</label>
     <!-- <label for="groupsvm">Group SVM & CS</label> -->
     <select id="release" name="release">
       <option value="australia">All Owners</option>
@@ -82,7 +88,7 @@
     </div>
 
     <div class="dropdn">
-      <span>Release Status</span>
+      <label>Release Status</label>
       <!-- <label for="groupsvm">Group SVM & CS</label> -->
       <select id="status" name="status">
         <option value="australia">All Release</option>
@@ -94,7 +100,7 @@
   </form>
   </div>
 
-<div class="col-lg-5 col-md-5 col-sm-12"   data-aos="fade-right" data-aos-delay="800">
+<div class="col-lg-4 col-md-4 col-sm-12"   data-aos="fade-right" data-aos-delay="800">
     <button class="reset">Reset</button>
     <div class="search">
       <input type="text" class="searchTerm" placeholder="What are you looking for?">
@@ -142,7 +148,10 @@
     <li class="br-r li-1"><a href="#">36578</a></li>
     <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
     <li class="br-r li-3">John Dove</li>
-    <li class="br-r li-4"><button>MX_CD</button> <button>Murex</button> <a data-toggle="collapse" href="#collapseBottom" aria-expanded="false" aria-controls="collapseTop"><img src="images/plus-icon.svg"></a></li>
+    <li class="br-r li-4">
+      <button data-toggle="collapse" href="#collapseBottom" aria-expanded="false" aria-controls="collapseTop">MX_CD <img src="images/down-arrow-white.svg"></button>
+      <button data-toggle="collapse" href="#collapseBottom" aria-expanded="false" aria-controls="collapseTop">Murex <img src="images/down-arrow-white.svg"></button>
+    </li>
     <li class="br-r li-5 red">Not Completed</li>
     <li class="br-r li-6">30 Nov, 2023</li>
     <li class="br-r li-7">GM Global Markets</li>
@@ -197,11 +206,12 @@
                     <ul>
                       <li><a href="#"><div class="left-green"><img src="images/tick-white.svg"></div> <div class="center-text-green">gso_secret_gitlab</div></a></li>
                       <li><a href="#"><div class="left-green"><img src="images/tick-white.svg"></div> <div class="center-text-green">pull_tafjlib</div><div class="right-green"><img src="images/download-icon.svg"></div></a></li>
-                      <li><a href="#"><div class="left-red"><img src="images/tick-white.svg"></div> <div class="center-text-red">ci_codeanalysis_sonarqube</div></a></li>
+                      <li><a href="#"><div class="left-red someElement" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit"><img src="images/info-icon.svg"></div> <div class="center-text-red">ci_codeanalysis_sonarqube</div></a></li>
                       <li><a href="#"><div class="left-green"><img src="images/tick-white.svg"></div> <div class="center-text-green">pull_tafjlib</div><div class="right-green"><img src="images/download-icon.svg"></div></a></li>
                     </ul>
                   </li>
                 </ul>
+                
               </div>
           </div>
       
@@ -233,7 +243,7 @@
                   <ul>
                     <li><a href="#"><div class="left-green"><img src="images/tick-white.svg"></div> <div class="center-text-green">gso_secret_gitlab</div></a></li>
                     <li><a href="#"><div class="left-green"><img src="images/tick-white.svg"></div> <div class="center-text-green">pull_tafjlib</div><div class="right-green"><img src="images/download-icon.svg"></div></a></li>
-                    <li><a href="#"><div class="left-red"><img src="images/tick-white.svg"></div> <div class="center-text-red">ci_codeanalysis_sonarqube</div></a></li>
+                    <li><a href="#"><div class="left-red"><img src="images/info-icon.svg"></div> <div class="center-text-red">ci_codeanalysis_sonarqube</div></a></li>
                     <li><a href="#"><div class="left-green"><img src="images/tick-white.svg"></div> <div class="center-text-green">pull_tafjlib</div><div class="right-green"><img src="images/download-icon.svg"></div></a></li>
                   </ul>
                 </li>
@@ -284,7 +294,9 @@
     <li class="br-r li-1"><a href="#">36578</a></li>
     <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
     <li class="br-r li-3">John Dove</li>
-    <li class="br-r li-4"><button>MX_CD</button> <button>Murex</button> <a href="#"><img src="images/plus-icon.svg"></a></li>
+    <li class="br-r li-4">
+      <button>MX_CD <img src="images/down-arrow-white.svg"></button>
+      <button>Murex <img src="images/down-arrow-white.svg"></button></li>
     <li class="br-r li-5 red">Not Completed</li>
     <li class="br-r li-6">30 Nov, 2023</li>
     <li class="br-r li-7">GM Global Markets</li>
