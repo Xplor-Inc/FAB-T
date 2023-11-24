@@ -129,7 +129,8 @@
   </div>
 </section>
 
-<div class="ml-3 mr-3 table-title">
+<section class="ml-3 mr-3">
+<div class="table-title" id="fixed">
   <ul>
     <li class="br-r li-1">ID</li>
     <li class="br-r li-2">Release Name</li>
@@ -143,7 +144,7 @@
   </ul>
 </div>
 
-<div class="ml-3 mr-3 table-content1">
+<div class="table-content1">
   <ul>
     <li class="br-r li-1"><a href="#">36578</a></li>
     <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
@@ -281,7 +282,7 @@
   
 </div>
 
-<div class="ml-3 mr-3 table-content2">
+<div class="table-content2">
   <ul>
     <li class="br-r li-1"><a href="#">36578</a></li>
     <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
@@ -295,7 +296,7 @@
   </ul>
 </div>
 
-<div class="ml-3 mr-3 table-content1">
+<div class="table-content1">
   <ul>
     <li class="br-r li-1"><a href="#">36578</a></li>
     <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
@@ -311,7 +312,7 @@
   </ul>
 </div>
 
-<div class="ml-3 mr-3 table-content2">
+<div class="table-content2">
   <ul>
     <li class="br-r li-1"><a href="#">36578</a></li>
     <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
@@ -325,7 +326,7 @@
   </ul>
 </div>
 
-<div class="ml-3 mr-3 table-content1">
+<div class="table-content1">
   <ul>
     <li class="br-r li-1"><a href="#">36578</a></li>
     <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
@@ -341,7 +342,7 @@
   </ul>
 </div>
 
-<div class="ml-3 mr-3 table-content2">
+<div class=" table-content2">
   <ul>
     <li class="br-r li-1"><a href="#">36578</a></li>
     <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
@@ -355,8 +356,67 @@
   </ul>
 </div>
 
+<div class=" table-content1">
+  <ul>
+    <li class="br-r li-1"><a href="#">36578</a></li>
+    <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
+    <li class="br-r li-3">John Dove</li>
+    <li class="br-r li-4">
+      <button>MX_CD <img src="images/down-arrow-white.svg"></button>
+      <button>Murex <img src="images/down-arrow-white.svg"></button></li>
+    <li class="br-r li-5 red">Not Completed</li>
+    <li class="br-r li-6">30 Nov, 2023</li>
+    <li class="br-r li-7">GM Global Markets</li>
+    <li class="br-r li-8">Corporate and Investment Banking</li>
+    <li class="li-9 green">Scheduled</li>
+  </ul>
+</div>
 
+<div class=" table-content2">
+  <ul>
+    <li class="br-r li-1"><a href="#">36578</a></li>
+    <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
+    <li class="br-r li-3">John Dove</li>
+    <li class="br-r li-4"><button>MX_CD</button> <button>Murex</button></li>
+    <li class="br-r li-5 green">Completed</li>
+    <li class="br-r li-6">30 Nov, 2023</li>
+    <li class="br-r li-7">GM Global Markets</li>
+    <li class="br-r li-8">Corporate and Investment Banking</li>
+    <li class="li-9 green">Scheduled</li>
+  </ul>
+</div>
 
+<div class=" table-content1">
+  <ul>
+    <li class="br-r li-1"><a href="#">36578</a></li>
+    <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
+    <li class="br-r li-3">John Dove</li>
+    <li class="br-r li-4">
+      <button>MX_CD <img src="images/down-arrow-white.svg"></button>
+      <button>Murex <img src="images/down-arrow-white.svg"></button></li>
+    <li class="br-r li-5 red">Not Completed</li>
+    <li class="br-r li-6">30 Nov, 2023</li>
+    <li class="br-r li-7">GM Global Markets</li>
+    <li class="br-r li-8">Corporate and Investment Banking</li>
+    <li class="li-9 green">Scheduled</li>
+  </ul>
+</div>
+
+<div class=" table-content2">
+  <ul>
+    <li class="br-r li-1"><a href="#">36578</a></li>
+    <li class="br-r li-2">Lorem ipsum dolor sit amet</li>
+    <li class="br-r li-3">John Dove</li>
+    <li class="br-r li-4"><button>MX_CD</button> <button>Murex</button></li>
+    <li class="br-r li-5 green">Completed</li>
+    <li class="br-r li-6">30 Nov, 2023</li>
+    <li class="br-r li-7">GM Global Markets</li>
+    <li class="br-r li-8">Corporate and Investment Banking</li>
+    <li class="li-9 green">Scheduled</li>
+  </ul>
+</div>
+
+</section>
 
 
 <button id="scroll" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
@@ -419,6 +479,15 @@
       duration: 800,
     });
 
+    var elementPosition = $('#fixed').offset();
+
+$(window).scroll(function(){
+        if($(window).scrollTop() > elementPosition.top){
+              $('#fixed').css('position','fixed').css('top','0').css('padding-right','2rem');
+        } else {
+            $('#fixed').css('position','static').css('padding-right','0');
+        }    
+});
     
   </script>
   </body>
