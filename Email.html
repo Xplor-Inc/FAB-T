@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template - .gilab-ci.yml Modified</title>
+</head>
+<body>
+
+    <p>This is a notification email triggered to highlight changes in .gitlab-ci.yml file in main branch of <b>{{REPOSITORY_NAME}} </b> </p>
+    <p>Below are the details of changes:</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Group Name</th>
+                <th>Repository Name</th>
+                <th>Commit Id</th>
+                <th>Commit Title</th>
+                <th>Commit Message</th>
+                <th>Committer Name</th>
+                <th>Committed Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{GROUP_NAME}}</td>
+                <td>{{REPOSITORY_NAME}}</td>
+                <td>{{COMMIT_ID}}</td>
+                <td>{{COMMIT_TITLE}}</td>
+                <td>{{COMMIT_MESSAGE}}</td>
+                <td>{{COMMITTER_NAME}}</td>
+                <td>{{COMMITTED_DATE}}</td>
+            </tr>
+            <!-- Add more rows and columns as needed -->
+        </tbody>
+    </table>
+    <br />
+    <p>Please click on the below link to view the change details in GitLab</p>
+    <p>{{WEB_URL}}</p>
+    <br />
+    <p>Commit Diff</p>
+    <div style="font-size:10px">
+        {{COMMITTED_DIFF}}
+    </div>
+    <p>*** This is an auto generated email. Please do not reply to this email.</p>
+    <br />
+    <p>
+        Best regards,<br>
+        TransparenSee Support Team
+    </p>
+</body>
+</html>
 
