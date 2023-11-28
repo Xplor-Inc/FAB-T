@@ -217,13 +217,19 @@ cursor: pointer; font-size: 16px; padding: 3px 5px; }
 .main-title{font-size: 14px; color: #205DFF; display: block; font-weight: bold; margin-top: 10px;}
 .red-band{background-color: #FFD4D4;}
 .left-box-red-sm{background-color: #E65959;height: 31px;width:12px; display: inline-block;position: absolute;z-index: 9;}
-.compliant-red{background-color: #E65959; font-size: 14px; color: white; display: inline-block; padding: 5px 10px;margin-left: 6px;}
-.inner-text{font-size: 14px; color: #E65959; display: inline-block; margin-left: 10px;}
-
+.compliant-red{background-color: #E65959; font-size: 14px; color: white; display: inline-block; padding: 7px 10px;margin-left: 6px;}
+.inner-text{display: inline;}
+.inner-text span{font-size: 14px; color: #E65959; display: inline-block; margin-left: 10px;}
+.inner-text div{float: right;}
+ 
 .green-band{background-color: #BFEC9D;}
 .left-box-green-sm{background-color: #459F00;height: 31px;width:12px; display: inline-block;position: absolute;z-index: 9;}
 .compliant-green{background-color: #459F00; font-size: 14px; color: white; display: inline-block; padding: 5px 10px;margin-left: 6px;}
 .inner-text-green{font-size: 14px; color: #459F00; display: inline-block; margin-left: 10px;}
+
+.guideline-url-red{font-size: 14px; right: 50px; position: relative; padding: 5px; font-weight: 400;}
+.guideline-url-red img{width: 20px; margin-right: 5px;}
+.guideline-url-red a{color: #E65959;}
 
 .first-block-bg{border: 1px solid #bbb; border-top-right-radius: 10px; border-top-left-radius: 10px; padding: 10px; margin-bottom: 10px;}
 .first-block-bg .release-title{color: #58508C; font-size: 14px;}
@@ -254,7 +260,7 @@ cursor: pointer; font-size: 16px; padding: 3px 5px; }
 .blue-title-content a:hover{text-decoration: none;}
 .blue-title-content .red{color: #E65959;}
 
-.new-block-bg{border: 1px solid #bbb; border-top-right-radius: 10px; border-top-left-radius: 10px; padding: 10px; margin-bottom: 10px;}
+.new-block-bg{border-right: 1px solid #bbb; border-left: 1px solid #bbb; border-bottom: 1px solid #bbb; margin-bottom: 10px; padding: 10px;}
 .new-blue-title-head ul{background-color: #4E6EA6; color: white; font-size: 12px; border-top-right-radius: 10px; border-top-left-radius: 10px; padding: 0 10px; margin-bottom: 0;}
 .new-blue-title-head ul a{color: white; text-decoration: underline;}
 .new-blue-title-head ul a:hover{color: white; text-decoration: none;}
@@ -266,9 +272,7 @@ cursor: pointer; font-size: 16px; padding: 3px 5px; }
 .new-blue-title-content button{background-color: #459F00; padding: 3px 7px; color: white; font-weight: bold; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); border-radius: 5px; border: 1px solid white; font-size: 12px;}
 .new-blue-title-content .red{background-color: #E65959; padding: 3px 7px; color: white; font-weight: bold; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); border-radius: 5px; border: 1px solid white; font-size: 12px;}
 .new-blue-title-content .red-txt{color:#E65959 ;}
-.new-block-bg
-.guideline-url a{text-align: right; margin-bottom: 10px; margin-right: 5px; display: block; font-size: 14px; color: #007bff; font-weight: 400;}
-.guideline-url a:hover{text-decoration: underline;}
+
 
 
 
@@ -406,7 +410,7 @@ details summary::-webkit-details-marker {
 
 details summary {
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0;
   border-top: 1px solid black;
   position: relative;
   cursor: pointer;
