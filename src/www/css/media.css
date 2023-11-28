@@ -1,3 +1,9 @@
+@media screen and (max-width : 1024px){
+    #center-content-scroll{overflow-x:scroll; overflow-y:hidden; height: auto;}
+    #center-content{width: 150%; white-space:nowrap; }
+    .navbar-brand img{width: 80%;}
+}
+
 @media screen and (max-width: 992px) {
     .navbar-toggler{padding: .25rem 0 .25rem .75rem;}
     .nav-link{border-bottom: 1px solid #ccc;}
