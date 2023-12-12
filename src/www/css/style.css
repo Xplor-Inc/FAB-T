@@ -331,6 +331,18 @@ cursor: pointer; font-size: 16px; padding: 3px 5px; }
 .blue-title-content .jobs ul li .left-red{background-color: #E65959; display: inline-block; padding: 5px; border-top-left-radius: 5px; border-bottom-left-radius: 5px;}
 .blue-title-content .jobs ul li .center-text-red{display: inline-block; padding: 4px; border: 1px solid #E65959; color: #E65959;}
 
+.modal-content{border-top-right-radius: 10px;  border-top-left-radius: 10px;}
+.modal-header{background-color: #7399FF; border-top-right-radius: 10px;  border-top-left-radius: 10px; padding: 5px 10px; color: white;  text-align: center;}
+.modal-header h4{font-size: 14px; line-height: normal}
+.modal-dialog{max-width: 98%}
+.modal-body{padding: 0}
+.popup-table{padding: 15px}
+.month-btns{display: flex; justify-content: space-between}
+.month-btns > ul{margin: 5px 0 0 15px; padding: 0; display: flex;}
+.month-btns > ul li{margin: 0; padding: 0; list-style: none}
+.month-btns > ul li a{background: #A9D2E6; font-size: 14px; font-weight: bold; color: white; text-align: center; padding: 5px 10px; border-radius: 5px; box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); border: 1px white solid; margin-right: 10px}
+.month-btns > ul li a:hover{background-color: #219EBC; text-decoration: none}
+.month-btns > ul li .active{background-color: #219EBC; text-decoration: none}
 
 /* tooltip */
 @use postcss-cssnext;

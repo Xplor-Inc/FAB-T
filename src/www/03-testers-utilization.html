@@ -55,6 +55,72 @@
 
 <!-- sub nav start -->
 
+<div class="container">
+  
+  <!-- Trigger the modal with a button -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Testers Utilization - CRM</h4>
+          <button type="button" class="close" data-dismiss="modal"><img src="images/close-btn.svg"></button>
+        </div>
+        <div class="modal-body">
+          <section class="month-btns">
+            <ul>
+              <li><a href="#" class="month-btn-light active">All</a></li>
+              <li><a href="#" class="month-btn-light">Jan-23</a></li>
+              <li><a href="#" class="month-btn-light">Feb-23</a></li>
+              <li><a href="#" class="month-btn-light">Mar-23</a></li>
+              <li><a href="#" class="month-btn-light">Apr-23</a></li>
+              <li><a href="#" class="month-btn-light">May-23</a></li>
+              <li><a href="#" class="month-btn-light">Jun-23</a></li>
+              <li><a href="#" class="month-btn-light">Jul-23</a></li>
+              <li><a href="#" class="month-btn-light">Aug-23</a></li>
+              <li><a href="#" class="month-btn-light">Sep-23</a></li>
+              <li><a href="#" class="month-btn-light">Oct-23</a></li>
+              <li><a href="#" class="month-btn-light">Nov-23</a></li>
+            </ul>
+
+            <div>
+              <ul id="pagination">
+                <li><a class="" href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#" class="active">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">»</a></li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="popup-table">
+            <img src="images/testers-utilization-crm.jpg">
+
+            <div class="bullet-points">
+              <ul>
+                <li><img src="images/dark-blue-dot.svg"> Total Test Case Designed & Executed</li>
+                <li><img src="images/blue-normal.svg"> Test Case Designed</li>
+                <li><img src="images/light-blue-dot.svg"> Test Case Executed</li>
+                <li><img src="images/gray-dot.svg"> Ideal Test Case Design & Execution</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
 
 <section>
   
@@ -65,7 +131,7 @@
 
 <section class="ml-3 mr-3">
 
-<div id="center-content">
+<div data-toggle="modal" data-target="#myModal" id="center-content">
 <div class="table-title-1">GIT Overall Testers Utilization</div>
 
 <div class="utilization-table">
@@ -267,6 +333,12 @@ $(window).scroll(function(){
             $('#fixed').css('position','static').css('padding-right','0');
         }    
 });
+
+$(document).on("click","#cust_btn",function(){
+  
+  $("#myModal").modal("toggle");
+  
+})
     
   </script>
   </body>
