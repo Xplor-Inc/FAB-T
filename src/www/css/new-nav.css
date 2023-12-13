@@ -1,0 +1,74 @@
+* { padding: 0; margin: 0; font-family: 'Roboto', sans-serif;}
+
+p {font-size: 16px;}
+li{list-style: none;}
+
+section {padding: 0.5rem 0;overflow: hidden;}
+section p{font-family: 'Roboto', sans-serif;font-size:1.1rem; line-height: 2rem; color: #7e7e7e;}
+
+header{background: #0c4d90; padding: 10px;}
+.head-top{justify-content: flex-end;}
+.head-top a{font-size: 14px; color: white; padding: 0 0 0 20px;}
+.dropdown-menu{padding: 0!important;}
+.dropdown-item{padding: .25rem .5rem!important; color: #212529!important;border-bottom: 1px solid #ccc;}
+
+/* Top icons css start */
+.dropdown-toggle::before{content: "";background-image: url(../images/eng-icon.jpg);display: inline-block;width: 26px; height: 16px;    margin: 0 6px 2px 0;  vertical-align: middle;}
+
+
+.navbar{background-color: #EBF0FE;}
+.navbar-nav{margin-right: -0.5rem;}
+.navbar-nav .nav-item{padding-top: 4px;}
+.navbar-nav .nav-item a{color: #fff; font-size: 15px;}
+.navbar-nav .nav-item a:hover{color:#fff;}
+.navbar-toggler-icon{color: #7e7e7e; font-size: 22px;display: contents;}
+.navbar-brand{padding-bottom: 0px!important; margin-right: 2rem; padding-top: .2rem;}
+.navbar-brand img{padding-bottom: 5px; width: 60%;}
+
+.navbar-collapse{line-height: normal;}
+.navbar-expand-lg .navbar-collapse{justify-content: end;}
+.overlay .closebtn{font-size: 35px!important;}
+
+.nav-dark-blue{background-color: #023047; }
+.button-slanted { -ms-transform: skewX(-20deg); -webkit-transform: skewX(-20deg); transform: skewX(-20deg); }
+.navbar-nav li { -ms-transform: skewX(20deg); -webkit-transform: skewX(20deg);  transform: skewX(20deg);  display: inline-block;}
+/* .nav-dark-blue::before{content: ""; width: 0; height: 0; border-top: 55px solid transparent;	border-right: 20px solid #023047;	border-bottom: 0px solid transparent; margin-left: -20px;}
+.nav-dark-blue::after{content: ""; width: 0; height: 0; border-top: 0px solid transparent; border-left: 20px solid #023047; border-bottom: 55px solid transparent; margin-right: -20px;} */
+
+.nav-navi-blue{background-color: #58508D;}
+/* .nav-navi-blue::before{content: ""; width: 0; height: 0; border-top: 55px solid transparent;	border-right: 20px solid #58508D;	border-bottom: 0px solid transparent; margin-left: -20px;} */
+.nav-navi-blue::after{content: ""; width: 0; height: 0; border-style: solid; border-color: transparent transparent #58508D transparent; border-width: 0px 0 43px 16px;-ms-transform: skewX(20deg); -webkit-transform: skewX(20deg);  transform: skewX(20deg); margin-right: -7px;}
+
+.sign-out{background-color: #219EBC;}
+/* .sign-out::before{content: ""; width: 0; height: 0; border-top: 55px solid transparent;	border-right: 20px solid #219EBC;	border-bottom: 0px solid transparent; margin-left: -20px;} */
+
+.devide-line{color: white; padding: 5px 3px 0;  font-size: 25px;}
+
+/* sub navigation */
+.sub-nav{background-color: #A9D2E6; display: flex; margin-top: 5px; height: 60px; justify-content: space-between;}
+.sub-nav p{font-size: 20px; color: #fff; vertical-align: middle; font-weight: bold; float: left; padding: 10px;}
+.sub-nav #groupsvm{float: right; font-size: 16px; color: #58508D; padding: 4px 10px; border-radius: 7px; margin: 9px 15px 0 0; background: #CDE3EE; border: solid 2px #fff;}
+
+
+
+/* user profile */
+.user-drop {position: absolute; top: calc(100% + 13px); right: 16px; width: 160px; min-height: 100px; background: #DAE4FF; box-shadow: 0 10px 20px rgba(0, 0, 0, .2); opacity: 0; transform: translateY(-10px); visibility: hidden; transition: 300ms;}
+
+.user-drop::before { content: ''; position: absolute; top: -10px; right: 14px; width: 20px; height: 20px; background: #DAE4FF; transform: rotate(45deg); z-index: -1;}
+
+.user-drop.active { opacity: 1; transform: translateY(0); visibility: visible;}
+
+/* menu links */
+
+.user-drop ul { position: relative; display: flex; flex-direction: column; z-index: 10; background: #DAE4FF;}
+.user-drop ul li { list-style: none;border-bottom: 1px solid #ccc;}
+.user-drop ul li:hover { background: #eee;}
+.user-drop ul li a { text-decoration: none; color: #000; display: flex; align-items: center; padding: 10px; }
+.user-drop ul li a i { font-size: 1.2em;}
+
+
+
+
+
+
+

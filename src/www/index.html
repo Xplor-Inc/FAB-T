@@ -20,37 +20,46 @@
 <nav class="navbar navbar-expand-lg p-0">
   <div class="container-fluid">
     
-      <a href="index.html" class="navbar-brand"  data-aos="fade-down" data-aos-delay="800"><img src="images/logo.png"></a>
-      <button class="navbar-toggler">
-          <span class="navbar-toggler-icon" onclick="openNav()"><i class="fa fa-align-right"></i></span>
-      </button>
-      <div class="navbar-collapse overlay" id="myNav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html" class="navbar-brand"  data-aos="fade-down" data-aos-delay="800"><img src="images/logo.png"></a>
+    <button class="navbar-toggler">
+        <span class="navbar-toggler-icon" onclick="openNav()"><i class="fa fa-align-right"></i></span>
+    </button>
+    <div class="navbar-collapse overlay" id="myNav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-          <ul class="navbar-nav text-center ml-auto overlay-content text-strt nav-dark-blue"  data-aos="fade-up" data-aos-delay="800">
-            <li class="nav-item"><a href="02-release.html" class="nav-link"><img src="images/release-icon.svg" alt=""> Releases</a></li>
-            <li class="devide-line">|</li>
-            <li class="nav-item"><a href="#" class="nav-link"><img src="images/gitlab_icon.svg" alt=""> Gitlab</a></li>
-            <li class="devide-line">|</li>
-            <li class="nav-item"><a href="#" class="nav-link"><img src="images/approve.svg" alt=""> Compliance</a></li>
-            <li class="devide-line">|</li>
-            <li class="nav-item"><a href="#" class="nav-link"><img src="images/data_icon.svg" alt=""> Testers Master Data</a></li>
-            <li class="devide-line">|</li>
-            <li class="nav-item"><a href="03-testers-utilization.html" class="nav-link"><img src="images/tester-icon.svg" alt=""> Tester Utilization</a></li>
-            <li class="devide-line">|</li>
-            <li class="nav-item"><a href="04-testing-cost-savings.html" class="nav-link"><img src="images/money-bag.svg" alt=""> Testing Cost Savings</a></li>
-          </ul>
+        <ul class="navbar-nav text-center mr-2 nav-dark-blue button-slanted">
+          <li class="nav-item"><a href="02-release.html" class="nav-link"><img src="images/release-icon.svg" alt=""> Releases</a></li>
+          <li class="devide-line">|</li>
+          <li class="nav-item"><a href="#" class="nav-link"><img src="images/gitlab_icon.svg" alt=""> Gitlab</a></li>
+          <li class="devide-line">|</li>
+          <li class="nav-item"><a href="#" class="nav-link"><img src="images/approve.svg" alt=""> Compliance</a></li>
+          <li class="devide-line">|</li>
+          <li class="nav-item"><a href="#" class="nav-link"><img src="images/data_icon.svg" alt=""> Testers Master Data</a></li>
+          <li class="devide-line">|</li>
+          <li class="nav-item"><a href="03-testers-utilization.html" class="nav-link"><img src="images/tester-icon.svg" alt=""> Tester Utilization</a></li>
+          <li class="devide-line">|</li>
+          <li class="nav-item"><a href="04-testing-cost-savings.html" class="nav-link"><img src="images/money-bag.svg" alt=""> Testing Cost Savings</a></li>
+          <li class="devide-line">|</li>
+          <li class="nav-item"><a href="#" class="nav-link"><img src="images/edit-report.svg" alt=""> Gitlab Edit Report</a></li>
+        </ul>
 
-          <ul class="navbar-nav text-center ml-auto overlay-content text-strt nav-navi-blue"  data-aos="fade-up" data-aos-delay="800">
-            <li class="nav-item"><a href="#" class="nav-link"><img src="images/user.svg" alt=""> User Name</a></li>
+        <!-- <ul class="navbar-nav text-center ml-auto overlay-content text-strt sign-out"  data-aos="fade-up" data-aos-delay="800">
+          <li class="nav-item"><a href="#" class="nav-link"><img src="images/sign_out.svg" alt=""> Sign Out</a></li>
+        </ul> -->
+        <ul class="navbar-nav text-center overlay-content text-strt nav-navi-blue button-slanted">
+          <li class="nav-item profile"><a href="#" class="nav-link"><img src="images/user.svg" alt=""></a></li>
+        </ul>
+        <div class="user-drop">
+          <ul>
+            <li><a href="#"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
+            <li><a href="#"><i class="ph-bold ph-envelope-simple"></i>&nbsp;Inbox</a></li>
+            <li><a href="#"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
+            <li><a href="#"><i class="ph-bold ph-question"></i>&nbsp;Help</a></li>
+            <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign Out</a></li>
           </ul>
-
-          <ul class="navbar-nav text-center ml-auto overlay-content text-strt sign-out"  data-aos="fade-up" data-aos-delay="800">
-            <li class="nav-item"><a href="#" class="nav-link"><img src="images/sign_out.svg" alt=""> Sign Out</a></li>
-          </ul>
-          
-      </div>
-  </div>
+        </div>
+    </div>
+</div>
 </nav>
 
 <!-- sub nav start -->
@@ -307,6 +316,14 @@
       duration: 800,
     });
 
+    // Profile dropdown//
+
+let profile = document.querySelector('.profile');
+let menu = document.querySelector('.user-drop');
+
+profile.onclick = function () {
+    menu.classList.toggle('active');
+}
     
   </script>
   </body>
