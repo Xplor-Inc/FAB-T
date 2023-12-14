@@ -49,7 +49,7 @@
         <ul class="navbar-nav text-center overlay-content text-strt nav-navi-blue button-slanted">
           <li class="nav-item profile"><a href="#" class="nav-link"><img src="images/user.svg" alt=""></a></li>
         </ul>
-        <div class="user-drop">
+        <div class="userdrop">
           <ul>
             <li><a href="#"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
             <li><a href="#"><i class="ph-bold ph-envelope-simple"></i>&nbsp;Inbox</a></li>
@@ -185,8 +185,11 @@
     <div class="col-lg-8 col-md-8 col-sm-12">
       <div class="testers-utilization-table">
         <div class="title">
+          <div class="git-count">
           <span>Testers Utilization - CB</span>
-          <span>Testers Utilization - CB</span>
+          <span><form><input type="checkbox" id="show_counts" name="Show Counts" value="Show Counts">
+            <label for="show_counts"> Show Counts</label></form></span>
+        </div>
         </div>
         <div class="white-content-area">
         <img src="images/testers-headcount.jpg">
@@ -279,11 +282,23 @@ $(window).scroll(function(){
 // Profile dropdown//
 
 let profile = document.querySelector('.profile');
-let menu = document.querySelector('.user-drop');
+let userdrop = document.querySelector('.userdrop');
 
-profile.onclick = function () {
-    menu.classList.toggle('active');
+// Function to close the popup when clicking outside
+function closePopup(event) {
+  // Check if the clicked element is not inside the userdrop
+  if (!userdrop.contains(event.target) && !profile.contains(event.target)) {
+    userdrop.classList.remove('active');
+  }
 }
+
+// Toggle the popup on profile click
+profile.onclick = function () {
+  userdrop.classList.toggle('active');
+};
+
+// Add a click event listener to the document to close the popup
+document.addEventListener('click', closePopup);
     
   </script>
   </body>
