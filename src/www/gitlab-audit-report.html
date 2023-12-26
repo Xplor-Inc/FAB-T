@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TransparenSee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+ </head>
+  <body>
+
+<!-- Navigations starts -->
+<nav class="navbar navbar-expand-lg p-0">
+  <div class="container-fluid">
+    
+    <a href="index.html" class="navbar-brand"  data-aos="fade-down" data-aos-delay="800"><img src="images/logo.png"></a>
+    <button class="navbar-toggler">
+        <span class="navbar-toggler-icon" onclick="openNav()"><i class="fa fa-align-right"></i></span>
+    </button>
+    <div class="navbar-collapse overlay" id="myNav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <ul class="navbar-nav text-center mr-2 nav-dark-blue button-slanted">
+        <li class="nav-item"><a href="release.html" class="nav-link"><img src="images/release-icon.svg" alt=""> Releases</a></li>
+        <li class="devide-line">|</li>
+        <li class="nav-item"><a href="gitlab.html" class="nav-link"><img src="images/gitlab_icon.svg" alt=""> Gitlab</a></li>
+        <li class="devide-line">|</li>
+        <li class="nav-item"><a href="compliance.html" class="nav-link"><img src="images/approve.svg" alt=""> Compliance</a></li>
+        <li class="devide-line">|</li>
+        <li class="nav-item"><a href="testers-master-data.html" class="nav-link"><img src="images/data_icon.svg" alt=""> Testers Master Data</a></li>
+        <li class="devide-line">|</li>
+        <li class="nav-item"><a href="testers-utilization.html" class="nav-link"><img src="images/tester-icon.svg" alt=""> Tester Utilization</a></li>
+        <li class="devide-line">|</li>
+        <li class="nav-item"><a href="testing-cost-savings.html" class="nav-link"><img src="images/money-bag.svg" alt=""> Testing Cost Savings</a></li>
+        <li class="devide-line">|</li>
+        <li class="nav-item"><a href="gitlab-audit-report.html" class="nav-link"><img src="images/edit-report.svg" alt=""> Gitlab Audit Report</a></li>
+      </ul>
+
+        <!-- <ul class="navbar-nav text-center ml-auto overlay-content text-strt sign-out"  data-aos="fade-up" data-aos-delay="800">
+          <li class="nav-item"><a href="#" class="nav-link"><img src="images/sign_out.svg" alt=""> Sign Out</a></li>
+        </ul> -->
+        <ul class="navbar-nav text-center overlay-content text-strt nav-navi-blue button-slanted">
+          <li class="nav-item profile"><a href="#" class="nav-link"><img src="images/user.svg" alt=""></a></li>
+        </ul>
+        <div class="userdrop">
+          <ul>
+            <li><a href="#"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
+            <li><a href="#"><i class="ph-bold ph-envelope-simple"></i>&nbsp;Inbox</a></li>
+            <li><a href="#"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
+            <li><a href="#"><i class="ph-bold ph-question"></i>&nbsp;Help</a></li>
+            <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign Out</a></li>
+          </ul>
+        </div>
+    </div>
+</div>
+</nav>
+
+<!-- sub nav start -->
+<section class="ml-3 mr-3">
+  <div class="page-title1">GitLab Events Audit Report</div>
+
+<div class="row sub-nav">
+  <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12"   data-aos="fade-left" data-aos-delay="800">
+    <div class="col-xl-8 col-lg-9 col-md-9 col-sm-12">
+      <div class="row">
+        <form class="group-drop" style="display:contents;">
+  
+          
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+              <div class="calendar">
+                <label for="usr">From Date</label>
+                <img src="images/calendar.svg"> <input type="text" class="cal-date" placeholder="MM/DD/YYYY">
+              </div>
+            </div>
+    
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+              <div class="calendar">
+                <label for="usr">To Date</label>
+                <img src="images/calendar.svg"> <input type="text" class="cal-date" placeholder="MM/DD/YYYY">
+              </div>
+            </div>
+    
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+              <div class="dropdn">
+                <label>Event Name</label>
+                <!-- <label for="groupsvm">Group SVM & CS</label> -->
+                <select id="release" name="release">
+                  <option value="australia">All Event</option>
+                  <option value="canada">Event 01</option>
+                  <option value="usa">Event 02</option>
+                </select>
+                </div>
+            </div>
+    
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+              <div class="search1">
+              <button type="submit" class="searchButton">
+                Search
+             </button>
+            </div>
+            </div>
+          
+    
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+
+<section class="ml-3 mr-3" id="center-content-scroll">
+  <div id="center-content">
+<div class="gitlab-table-title" id="fixed">
+  <ul>
+    <li class="br-r li-1">Sr.</li>
+    <li class="br-r li-2">Event Name</li>
+    <li class="br-r li-3">Event ID</li>
+    <li class="br-r li-4">Message</li>
+    <li class="br-r li-5">Status</li>
+    <li class="br-r li-6">Event Triggered By</li>
+    <li class="br-r li-7">Event Triggered At</li>
+    <li class="br-r li-8">Group Name</li>
+    <li class="br-r li-9">Repository Name</li>
+    <li class="li-10">Gitlab Link</li>
+  </ul>
+</div>
+
+<div class="gitlab-table-content">
+  <ul>
+    <li class="br-r li-1">1.</li>
+    <li class="br-r li-2">ymlmodification</li>
+    <li class="br-r li-3">c9c573</li>
+    <li class="br-r li-4">Update GitLab-ci.yml file</li>
+    <li class="br-r li-5 yellow">Pending</li>
+    <li class="br-r li-6">Deveraux Dietrich</li>
+    <li class="br-r li-7">20-Dec-23, 12:33:44</li>
+    <li class="br-r li-8">CRM</li>
+    <li class="br-r li-9">mrstatus</li> 
+    <li class="li-10"><a href="#">View</a></li>
+  </ul>
+
+  <ul>
+    <li class="br-r li-1">2.</li>
+    <li class="br-r li-2">ymlmodification</li>
+    <li class="br-r li-3">c9c573</li>
+    <li class="br-r li-4">Update GitLab-ci.yml file</li>
+    <li class="br-r li-5 yellow">Pending</li>
+    <li class="br-r li-6">Deveraux Dietrich</li>
+    <li class="br-r li-7">20-Dec-23, 12:33:44</li>
+    <li class="br-r li-8">CRM</li>
+    <li class="br-r li-9">mrstatus</li> 
+    <li class="li-10"><a href="#">View</a></li>
+  </ul>
+
+  <ul>
+    <li class="br-r li-1">3.</li>
+    <li class="br-r li-2">ymlmodification</li>
+    <li class="br-r li-3">c9c573</li>
+    <li class="br-r li-4">Update GitLab-ci.yml file</li>
+    <li class="br-r li-5 yellow">Pending</li>
+    <li class="br-r li-6">Deveraux Dietrich</li>
+    <li class="br-r li-7">20-Dec-23, 12:33:44</li>
+    <li class="br-r li-8">CRM</li>
+    <li class="br-r li-9">mrstatus</li> 
+    <li class="li-10"><a href="#">View</a></li>
+  </ul>
+
+  <ul>
+    <li class="br-r li-1">4.</li>
+    <li class="br-r li-2">ymlmodification</li>
+    <li class="br-r li-3">c9c573</li>
+    <li class="br-r li-4">Update GitLab-ci.yml file</li>
+    <li class="br-r li-5 yellow">Pending</li>
+    <li class="br-r li-6">Deveraux Dietrich</li>
+    <li class="br-r li-7">20-Dec-23, 12:33:44</li>
+    <li class="br-r li-8">CRM</li>
+    <li class="br-r li-9">mrstatus</li> 
+    <li class="li-10"><a href="#">View</a></li>
+  </ul>
+
+  <ul>
+    <li class="br-r li-1">5.</li>
+    <li class="br-r li-2">ymlmodification</li>
+    <li class="br-r li-3">c9c573</li>
+    <li class="br-r li-4">Update GitLab-ci.yml file</li>
+    <li class="br-r li-5 yellow">Pending</li>
+    <li class="br-r li-6">Deveraux Dietrich</li>
+    <li class="br-r li-7">20-Dec-23, 12:33:44</li>
+    <li class="br-r li-8">CRM</li>
+    <li class="br-r li-9">mrstatus</li> 
+    <li class="li-10"><a href="#">View</a></li>
+  </ul>
+</div>
+
+</div>
+
+</section>
+
+
+<button id="scroll" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.counterup.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/aos.js"></script>
+  
+
+  <script>
+    $('.count').counterUp({
+      delay:10,
+      time:2000
+    });
+
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    };
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    };
+
+    $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 800); 
+        return false; 
+    }); 
+    });
+    
+    
+    var coll = document.getElementsByClassName("footericon");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var footerit = this.nextElementSibling;
+    if (footerit.style.display === "block") {
+      footerit.style.display = "none";
+    } else {
+      footerit.style.display = "block";
+    }
+    });
+    }
+
+    AOS.init({
+      delay: 50,
+      duration: 800,
+    });
+
+    var elementPosition = $('#fixed').offset();
+
+$(window).scroll(function(){
+        if($(window).scrollTop() > elementPosition.top){
+              $('#fixed').css('position','fixed').css('top','0').css('padding-right','2rem');
+        } else {
+            $('#fixed').css('position','static').css('padding-right','0');
+        }    
+});
+
+// Profile dropdown//
+
+let profile = document.querySelector('.profile');
+let userdrop = document.querySelector('.userdrop');
+
+// Function to close the popup when clicking outside
+function closePopup(event) {
+  // Check if the clicked element is not inside the userdrop
+  if (!userdrop.contains(event.target) && !profile.contains(event.target)) {
+    userdrop.classList.remove('active');
+  }
+}
+
+// Toggle the popup on profile click
+profile.onclick = function () {
+  userdrop.classList.toggle('active');
+};
+
+// Add a click event listener to the document to close the popup
+document.addEventListener('click', closePopup);
+
+    
+  </script>
+  </body>
+</html>
