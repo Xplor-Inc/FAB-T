@@ -52,9 +52,9 @@ header{background: #0c4d90; padding: 10px;}
 
 
 /* user profile */
-.userdrop {position: absolute; top: calc(100% + 13px); right: 16px; width: 160px; min-height: 100px; background: #DAE4FF; box-shadow: 0 10px 20px rgba(0, 0, 0, .2); opacity: 0; transform: translateY(-10px); visibility: hidden; transition: 300ms; z-index: 99;}
+.userdrop {position: absolute; top: calc(100% + 13px); right: 16px; width: 160px; min-height: 100px; background: #778697; box-shadow: 0 10px 20px rgba(0, 0, 0, .2); opacity: 0; transform: translateY(-10px); visibility: hidden; transition: 300ms; z-index: 99; color: white;}
 
-.userdrop::before { content: ''; position: absolute; top: -10px; right: 14px; width: 20px; height: 20px; background: #DAE4FF; transform: rotate(45deg); z-index: -1;}
+.userdrop::before { content: ''; position: absolute; top: -10px; right: 14px; width: 20px; height: 20px; background: #778697; transform: rotate(45deg); z-index: -1;}
 
 .userdrop.active { opacity: 1; transform: translateY(0); visibility: visible;}
 g
@@ -63,7 +63,8 @@ g
 .userdrop ul { position: relative; display: flex; flex-direction: column; z-index: 10; background: #DAE4FF;}
 .userdrop ul li { list-style: none;border-bottom: 1px solid #ccc;}
 .userdrop ul li:hover { background: #eee;}
-.userdrop ul li a { text-decoration: none; color: #000; display: flex; align-items: center; padding: 10px; }
+.userdrop ul li a { text-decoration: none; color: white; display: flex; align-items: center; padding: 10px; }
+.userdrop ul li a:hover { color: #778697; }
 .userdrop ul li a i { font-size: 1.2em;}
 
 .block-one{display: table;    width: 100%;}
@@ -202,6 +203,58 @@ outline: none; color:#58508D; background:none; font-size: 14px; border-bottom: s
 .gitlab-table-title .li-9{width: 10%;}
 .gitlab-table-title .li-10{width: 5%;}
 
+
+.master-data-table{width: 100%; z-index: 99;}
+.master-data-table ul{background-color: #244B98; border-top-right-radius: 10px; border-top-left-radius: 10px; padding:0 10px; color: white; font-size: 14px; margin-bottom: 1px; z-index: 99;}
+.master-data-table ul li{list-style: none; display: inline-block; padding:10px 3px;}
+.master-data-table .br-r{border-right: 1px solid white;}
+.master-data-table .li-1{width: 5%;}
+.master-data-table .li-2{width: 14%;}
+.master-data-table .li-3{width: 11%;}
+.master-data-table .li-4{width: 8%;}
+.master-data-table .li-5{width: 10%;}
+.master-data-table .li-6{width: 6%;}
+.master-data-table .li-7{width: 14%;}
+.master-data-table .li-8{width: 6%;}
+.master-data-table .li-9{width: 6%;}
+.master-data-table .li-10{width: 8%;}
+.master-data-table .li-11{width: 6%;}
+.master-data-table .li-12{width: 3%;}
+
+.master-data-table-content{width: 100%;}
+.master-data-table-content ul{background-color: #f5f6f8; padding:4px 10px; color: #2f5597; font-size: 14px; margin-bottom: 1px; }
+.master-data-table-content ul li{list-style: none; display: inline-block; padding: 5px 3px;}
+.master-data-table-content .br-r{border-right: 1px solid white;}
+.master-data-table-content .li-1{width: 5%;}
+.master-data-table-content .li-2{width: 14%;}
+.master-data-table-content .li-3{width: 11%;}
+.master-data-table-content .li-4{width: 8%;}
+.master-data-table-content .li-5{width: 10%;}
+.master-data-table-content .li-6{width: 6%;}
+.master-data-table-content .li-7{width: 14%;}
+.master-data-table-content .li-8{width: 6%;}
+.master-data-table-content .li-9{width: 6%;}
+.master-data-table-content .li-10{width: 8%;}
+.master-data-table-content .li-11{width: 6%;}
+.master-data-table-content .li-12{width: 3%;}
+
+.master-data-table-content-1{width: 100%;}
+.master-data-table-content-1 ul{background-color: #BDD8FF; padding:4px 10px; color: #2f5597; font-size: 14px; margin-bottom: 1px; }
+.master-data-table-content-1 ul li{list-style: none; display: inline-block; padding: 5px 3px;}
+.master-data-table-content-1 .br-r{border-right: 1px solid white;}
+.master-data-table-content-1 .li-1{width: 5%;}
+.master-data-table-content-1 .li-2{width: 14%;}
+.master-data-table-content-1 .li-3{width: 11%;}
+.master-data-table-content-1 .li-4{width: 8%;}
+.master-data-table-content-1 .li-5{width: 10%;}
+.master-data-table-content-1 .li-6{width: 6%;}
+.master-data-table-content-1 .li-7{width: 14%;}
+.master-data-table-content-1 .li-8{width: 6%;}
+.master-data-table-content-1 .li-9{width: 6%;}
+.master-data-table-content-1 .li-10{width: 8%;}
+.master-data-table-content-1 .li-11{width: 6%;}
+.master-data-table-content-1 .li-12{width: 3%;}
+
 .table-title-1{background-color: #244B98; border-top-right-radius: 10px; border-top-left-radius: 10px; padding:10px; color: white; font-size: 14px; margin-bottom: 1px; text-align: center;}
 
 
@@ -303,9 +356,10 @@ input[type=checkbox]:checked:disabled + label:before { transform: scale(1); back
 .gitlab-title{background-color: #d8dcdf; display:flex;}
 .gitlab-title p{font-size: 14px; color: #2f5597; left: 30px; display: inline-block; position: relative; top: 9px;}
 .gitlab-title .sm-bx{background-color: #244B98; height: 48px; width: 17px; display: inline-block; position: absolute; z-index: 9;}
-.gitlab-title .nom{background-color: #244B98; font-size: 20px; color: white; font-weight: 400; padding: 9px 15px; display: inline-block; position: relative; left: 9px;}
+.gitlab-title .nom{background-color: #244B98; font-size: 20px; color: white; font-weight: bold; padding: 9px 15px; display: inline-block; position: relative; left: 9px;}
 .second-ttl{color: #2b4058; font-size: 14px; text-align: left; padding: 10px;}
 .gitlab-content{background-color: #d2d7db; padding: 10px; color: #777; font-size: 14px;}
+.fl-r{float: right;}
 
 
 .drop1{margin: 0 auto; width: 99%; padding-bottom: 15px;}
